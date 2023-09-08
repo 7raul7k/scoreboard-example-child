@@ -1,0 +1,3 @@
+<app-header [points] = totalScore() [numberPlayers] = totalPlayers()>  </app-header>
+<app-player *ngFor="let element of players" [player]="element" (changeScore)="handleChangeScore($event)" (deletePlayer)="handleDeletePlayer($event)" ></app-player>
+<app-add-player (addPlayer)="handleAddPlayer($event)"></app-add-player>
